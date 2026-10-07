@@ -17,6 +17,7 @@
     "typescript": "^7"
   },
   "dependencies": {
+    "@appointment-booking/validation": "workspace:*",
     "dotenv": "^18.0.6",
     "drizzle-orm": "^0.45.3",
     "hono": "^4.13.13",

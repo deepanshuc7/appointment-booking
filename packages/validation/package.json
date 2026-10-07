@@ -1,12 +1,15 @@
 {
   "name": "@appointment-booking/validation",
-  "module": "index.ts",
-  "type": "module",
+  "version": "0.0.0",
   "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
   },
-  "peerDependencies": {
-    "typescript": "^7"
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
   }
 }
