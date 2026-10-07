@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: appointment-booking-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: appointment
+      POSTGRES_PASSWORD: appointment
+      POSTGRES_DB: appointment_booking
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

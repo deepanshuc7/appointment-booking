@@ -4,15 +4,22 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2"
+    "@types/bun": "^1.4.2",
+    "drizzle-kit": "^0.31.11"
   },
   "peerDependencies": {
     "typescript": "^7"
   },
   "dependencies": {
-    "hono": "^4.13.13"
+    "dotenv": "^18.0.6",
+    "drizzle-orm": "^0.45.3",
+    "hono": "^4.13.13",
+    "postgres": "^3.4.9"
   }
 }
