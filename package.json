@@ -7,7 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun --filter '*' dev",
+    "dev:customer": "cd apps/customer-web && bun run dev",
+    "dev:provider": "cd apps/provider-web && bun run dev",
+    "dev:api": "cd apps/api && bun run dev",
     "test": "bun --filter '*' test"
   },
   "devDependencies": {

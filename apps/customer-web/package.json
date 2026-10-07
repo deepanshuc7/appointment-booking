@@ -1,5 +1,5 @@
 {
-  "name": "customer-web",
+  "name": "@appointment-booking/customer-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",

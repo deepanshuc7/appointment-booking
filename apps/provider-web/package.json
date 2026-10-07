@@ -1,5 +1,5 @@
 {
-  "name": "provider-web",
+  "name": "@appointment-booking/provider-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
